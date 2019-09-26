@@ -1,0 +1,379 @@
+<!DOCTYPE html> <!-- MDN says this is important to let browsers know you're using HTML5 content. Do We use the <html></html> tag as well? -->
+<html>
+    <!-- 
+        Basic structure of the mockup found at: 
+        https://dribbble.com/shots/7102647-Flooks
+    -->
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Flooks Dashboard</title>
+        <meta name="description" content="Info for all of your Flooks needs!">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+    </head>
+
+    <body>
+
+        <div class="yellow_background"></div>
+
+        <sidebar>   <!-- Left Nav Bar -->
+
+            <a class="sidebar_link" href="">
+                <img class="sidebar_icons" src="icons/menu.svg">  <!-- Individual nav item images -->
+            </a>
+
+            <a class="sidebar_link" href="">
+                <img class="sidebar_icons" src="icons/fire.svg">  <!-- Individual nav item images -->
+            </a>
+
+            <a class="sidebar_link" href="">
+                <img class="sidebar_icons" src="icons/trophy.svg">  <!-- Individual nav item images -->
+            </a>
+
+            <a class="sidebar_link" href="">
+                <img class="sidebar_icons" src="icons/football.svg">  <!-- Individual nav item images -->
+            </a>
+
+            <a class="sidebar_link" href="">
+                <img class="sidebar_icons" src="icons/basketball.svg">  <!-- Individual nav item images -->
+            </a>
+
+            <a class="sidebar_link" href="">
+                <img class="sidebar_icons" src="icons/boxing-gloves.svg">  <!-- Individual nav item images -->
+            </a>
+
+            <a class="sidebar_link" href="">
+                <img class="sidebar_icons" src="icons/bicycle-rider.svg">  <!-- Individual nav item images -->
+            </a>
+
+            <a class="sidebar_link" href="">
+                <img class="sidebar_icons" src="icons/ping-pong.svg">  <!-- Individual nav item images -->
+            </a>
+
+            <a class="sidebar_link" href="">
+                <img class="sidebar_icons" src="icons/console.svg">  <!-- Individual nav item images -->
+            </a>
+
+            <a class="sidebar_link" href="">
+                <img class="sidebar_icons" src="icons/running.svg">  <!-- Individual nav item images -->
+            </a>
+
+            <a class="sidebar_link" href="">
+                <img class="sidebar_icons" src="icons/golf-hole-and-flag.svg">  <!-- Individual nav item images -->
+            </a>
+
+            <a class="sidebar_link" href="">
+                <img class="sidebar_icons" src="icons/target.svg">  <!-- Individual nav item images -->
+            </a>
+
+            <a class="sidebar_link" href="">
+                <img class="sidebar_icons" src="icons/medal.svg">  <!-- Individual nav item images -->
+            </a>
+
+        </sidebar>
+
+        <header>    <!-- Top Navigation Bar -->
+
+            <!-- Company Logo Image -->
+            <img class="site_logo" src="images/flooks_logo_screengrab.png">
+
+            <nav>    <!-- Top Navigation Items -->
+
+                <ul>    <!-- Should these be wrapped in the navbar for context? It won't make a formatting difference. -->
+                    <li>
+                        <a class="top_nav_link" href="">SPORTS</a>
+                    </li>
+                    <li>
+                        <a class="top_nav_link" href="">LIVE PLAY</a>
+                    </li>
+                    <li>
+                        <a class="top_nav_link" href="">JACKPOT</a>
+                    </li>
+                    <li>
+                        <a class="top_nav_link" href="">CHAT</a>
+                    </li>
+                    <li>
+                        <a class="top_nav_link" href="">PROMOTIONS</a>
+                    </li>
+                    <li>
+                        <a class="top_nav_link" href="">NEWS</a>
+                    </li>
+                    <li>
+                        <a class="top_nav_link" href="">STATISTICS</a>
+                    </li>
+                </ul>
+
+            </nav>
+
+            <div class="time_zone">   <!-- Time Zone Selector? -->
+                <span class="time_zone_time"><b>15:41</b></span>
+                <span class="time_zone_location">(GMT+1)</span>
+                <span class="time_zone_carat"><b>∨</b></span>
+                <img> <!-- Down Carat. Is that an image or element of a font? -->
+            </div>
+
+            <span class="header_profile">   <!-- Account Options (Note: HTML4 can't wrap a div in "a" tags, though HTML5 can) -->
+                <span class="header_profile_carat"><b>∨</b></span>
+                <img class="header_profile_picture" src="images/cat_full.jpeg">   <!-- Profile Image -->
+            </span>
+
+        </header>
+
+        <main> <!-- All Content Aside the Side Navbar -->
+
+                <section class="left_column">   <!-- Main Left Column -->
+
+                    <div class="left_column_top_buttons_wrapper">   <!-- Top Button Bar -->
+                        <button class="upper_left_buttons">←</button>
+                        <img class="upper_left_buttons upper_left_button_icon" src="icons/turn-notifications-off-button.svg">
+                    </div>
+
+                    <img class="profile_img" src="images/cat_full.jpeg">   <!-- Profile Photo -->
+                    <h3>ENGLAND</h3>
+                    <h1>Slava Kornilov</h1>
+                    <h2><sup>$</sup>25 000</h2>
+
+                    <div class="dep_take_group">   <!-- Deposit / Take Buttons -->
+                        <div class="dep_take_button deposit_button">Deposit</div>
+                        <div class="dep_take_button take_button">Take</div>
+                    </div>
+
+                    <div class="bottom_buttons_container">   <!-- Additional Views -->
+                        
+                        <div class="left_bottom_button_column">
+
+                            <div class="left_column_bottom_buttons">
+                                <img src="icons/trophy.svg">
+                                <p>My bets</p>
+                            </div>
+
+                            <div class="left_column_bottom_buttons">
+                                <img src="icons/movie-tickets.svg">
+                                <p>Tickets</p>
+                            </div>
+
+                            <div class="left_column_bottom_buttons">
+                                <img src="icons/team.svg">
+                                <p>Team</p>
+                            </div>
+
+                        </div>
+
+                        <div class="left_bottom_button_column">
+
+                            <div class="left_column_bottom_buttons">
+                                <img src="icons/transactions.svg">
+                                <p>Transactions</p>
+                            </div>  
+
+                            <div class="left_column_bottom_buttons">
+                                <img src="icons/dice.svg">
+                                <p>Random</p>
+                            </div>
+
+                            <div class="left_column_bottom_buttons">
+                                <img src="icons/settings.svg">
+                                <p>Edit Profile</p>
+                            </div>
+                        
+                        </div>
+
+                    </div>
+
+
+                        <!-- A couple other buttons are obscured from view -->
+                    </div>
+
+                </section>
+
+                <section class="mid_column">    <!-- Main Center Column -->
+
+                    <div class="mid_column_row">   <!-- Top Row of Cards -->
+
+                        <div class="small_card">   <!-- First Card -->
+                            
+                            <div>
+                                <p class="mid_col_top_row_number">1,300</p>
+                                <p class="mid_col_top_row_players">High-Risk Players</p>
+                            </div>
+
+                            <img class="mid_top_dots" src="icons/menu dots.svg">  <!-- Kebab Button -->
+                            
+                            <p class="mid_col_top_row_percent">&uarr; +2.0%</p> <!-- The up arrow may need to be styled separately -->
+                            
+                            <img class="mid_top_graph" src="images/mini-graph-1.png">   <!-- Some Graph Drawing Functionality -->
+
+                        </div>
+
+                        <div class="small_card">   <!-- Second Card -->
+                            
+                            <div>
+                                <p class="mid_col_top_row_number">6,600</p>
+                                <p class="mid_col_top_row_players">Low-Risk Players</p>
+                            </div>
+
+                            <img class="mid_top_dots" src="icons/menu dots.svg">  <!-- Kebab Button -->
+                            
+                            <p class="mid_col_top_row_percent">&darr; -0.2%</p> <!-- The up arrow may need to be styled separately -->
+                            
+                            <img class="mid_top_graph" src="images/mini-graph-2.png">   <!-- Some Graph Drawing Functionality -->
+
+                        </div>
+
+                        <div class="small_card">   <!-- Third Card -->
+                            
+                            <div>
+                                <p class="mid_col_top_row_number">234k</p>
+                                <p class="mid_col_top_row_players">Self-Risk Players</p>
+                            </div>
+
+                            <img class="mid_top_dots" src="icons/menu dots.svg">  <!-- Kebab Button -->
+                            
+                            <p class="mid_col_top_row_percent">&uarr; +3.1%</p> <!-- The up arrow may need to be styled separately -->
+                            
+                            <img class="mid_top_graph" src="images/mini-graph-3.png">   <!-- Some Graph Drawing Functionality -->
+
+                        </div>
+
+                    </div>
+
+                    <div class="full_card">   <!-- Large Central Card -->
+                        
+                        <div class="full_card_top">
+                            <div>   <!-- Title and Date -->
+                                <h1>Your <span class="bet_buddy_title">BetBuddy</span></h1>
+                                <p class="bet_buddy_today">Today</p>
+                            </div>
+
+                            <div class="full_card_nav">    <!-- Graph Time Period Options -->
+
+                                <a href="">WEEK</a>
+                                <a class="active" href="">MONTH</a>
+                                <a href="">QUARTER</a>
+                                <a href="">YEAR</a>
+
+                            </div>
+                        
+                        </div>
+
+                            <img class="large_graph" src="images/large_graph.png">
+                            <!-- External Graph Functionality -->
+                    </div>
+
+                    <div class="mid_column_row">   <!-- Bottom Row of Cards -->
+
+                        <div class="small_card">   <!-- First Card -->
+                            
+                            <div>
+                                <p class="mid_col_top_row_number">Country</p>
+                                <p class="mid_col_top_row_players">Breakdown</p>
+                            </div>
+
+                            <img class="mid_top_dots" src="icons/planet-earth.svg">  <!-- Globe Button? Icon? -->
+                            
+                            <img class="full_width_small_card_graph" src="images/world graph.png"> <!-- External Graph Functionality -->                        
+
+                        </div>
+
+                        <div class="small_card">   <!-- Second Card -->
+                            
+                            <div>
+                                <p>03:20</p>
+                                <p>Tomorrow</p>
+                            </div>
+
+                            <div>   <!-- Overlapping (Offset) Team Logos -->
+                                <img>
+                                <img>
+                            </div>
+                            
+                            <img> <!-- Sportsball Photo -->                        
+
+                        </div>
+
+                        <div class="small_card">   <!-- Third Card -->
+                            
+                            <div>
+                                <p>11:04</p>
+                                <p>1 time</p>
+                            </div>
+
+                            <div>   <!-- Overlapping (Offset) Team Logos -->
+                                <img>
+                                <img>
+                            </div>
+                            
+                            <div>   <!-- Overlapping Friend Images -->
+                                <img>
+                                <img>
+                            </div>
+
+                            <p>09' 14'</p>
+                            
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <section class="right_column">  <!-- Main Right Column -->
+
+                    <div class="small_card">   <!-- Top Card -->
+                            
+                        <div>
+                            <p class="mid_col_top_row_number">Assets</p>
+                            <p class="mid_col_top_row_players">Report Players</p>
+                        </div>
+
+                        <img class="mid_top_dots" src="icons/layout.svg">   <!-- Layout Button? Icon? -->
+                        
+                        <img class="full_width_small_card_graph" src="images/circle graph.png"> <!-- External Graph Functionality -->                        
+
+                    </div>
+
+                    <div class="small_card">   <!-- Middle Card -->
+                            
+                        <div>
+                            <p>03:20</p>
+                            <p>19.03</p>
+                        </div>
+
+                        <div>   <!-- Overlapping (Offset) Team Logos -->
+                            <img>
+                            <img>
+                        </div>
+                        
+                        <img> <!-- Sportsball Photo -->    
+                        
+                        <p>TOP GAME</p>
+                        <div>
+                            <p>Real Madrid</p>
+                            <p>3</p>
+                            <!-- Unsure how the carat is drawn beside this line -->
+                        </div>
+                        <div>
+                            <p>Manchester</p>
+                            <p>1</p>
+                        </div>
+
+                        <span>
+                            2.01
+                        </span>
+                        <span>
+                            ^ 1.03  <!-- Use icon font set for up/down carat? -->
+                        </span>
+                        <span>
+                            5.50 v  <!-- Use icon font set for up/down carat? -->
+                        </span>
+
+                    </div>
+
+                    <div class="small_card">   <!-- Bottom Card (off screen) -->
+                    </div>
+
+                </section>            
+
+        </main>
+
+    </body>
+</html>

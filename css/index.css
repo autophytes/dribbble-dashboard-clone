@@ -1,0 +1,479 @@
+html {
+    box-sizing: border-box;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 16px;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.yellow_background {
+    background-color: rgb(253, 218, 43);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 35vh;
+    z-index: -5;
+    border-radius: 0 0 35% 35%;
+}
+
+sidebar {
+    position: fixed;
+    z-index: 20;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 70px;
+    padding: 5px 0;
+    background-color: white;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sidebar_icons {
+    display: inline-block;
+    width: 35px;
+    padding: 5px;
+    /* margin: auto auto; */
+}
+
+.sidebar_link {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar_link:hover{
+    background-color: rgba(0, 0, 0, .05);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(246, 246, 244);
+}
+
+
+main {
+    width: 100% - 70px; /* NOTE: width/margin need to account for sidebar / header */
+    margin-left: 70px;
+    margin-top: 70px;
+    /* padding-top: 15px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 0 10px;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin: 5px 0;
+    font-weight: 600;
+    color: rgb(55, 56, 52);
+}
+
+h2 {
+    margin: 10px 0;
+    font-weight: 200;
+    color: rgb(55, 56, 52);
+}
+
+h3 {
+    margin: 10px 0 5px 0;
+    color: rgb(194, 196, 188);
+    font-size: 1rem;
+}
+
+
+/* HEADER */
+header {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 20;
+    left: 70px;
+    top: 0px;
+    right: 0px;
+    height: 50px;
+    padding: 0 20px;
+    overflow: hidden;
+    border-bottom: 1px solid rgb(246, 210, 38);
+    background-color: rgb(253, 218, 43);
+    box-shadow: 5px 0 15px 0px rgba(0, 0, 0, 0.15);
+}
+
+.site_logo {
+    height: 30px;
+}
+
+.top_nav_link {
+    text-decoration: none;
+    color: rgb(231, 196, 28);
+    font-weight: 600;
+}
+
+.top_nav_link:hover {
+    color: rgb(63, 59, 50);
+}
+
+.time_zone {
+    padding: 8px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 2px solid rgb(246, 210, 38);
+    border-radius: 5px;
+}
+
+.time_zone:hover {
+    border-color: #705e10;
+}
+
+.time_zone_time {
+    color: #705e10;
+}
+
+.time_zone_location {
+    color: rgb(231, 196, 28);
+    padding-left: 2px;
+}
+.time_zone_carat {
+    padding-left: 10px;
+    color: rgb(231, 196, 28);
+}
+
+.header_profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 8px 5px 5px;
+    border-radius: 10px;
+}
+
+.header_profile:hover {
+    background-color: rgba(0, 0, 0, .05);
+    border: 1px solid #705e10;
+}
+
+.header_profile_picture {
+    height: 30px;
+    border-radius: 100%;
+}
+
+.header_profile_carat {
+    color: rgb(231, 196, 28);
+    padding-right: 5px;
+}
+
+
+/* TOP LEVEL COLUMNS  */
+
+.left_column {
+    /* background-color: red; */
+    width: 20%;
+    padding: 10px 0px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.mid_column {
+    /* background-color: green; */
+    padding: 10px;
+    width: 60%;
+}
+
+.right_column {
+    /* background-color: blue; */
+    padding: 10px;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.small_card {
+    display: inline-block;
+    position: relative; /* so we can absolute position interior elements */
+    width: 100%;
+    background-color: #fff;
+    margin: 5px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.1);
+}
+
+.full_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    width: 100% - 10px;
+    background-color: #fff;
+    padding: 15px;
+    margin: 5px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* LEFT COLUMN CONTENT */
+
+.left_column_top_buttons_wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: space-between;
+    margin-top: 20px;
+}
+
+.upper_left_buttons {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: rgb(0,0,0,0);
+    color: #705e10;
+    font-size: 20px;
+    text-align: center;
+    border: 2px solid rgb(246, 210, 38);
+}
+
+.upper_left_button_icon {
+    padding: 8px;
+}
+
+.upper_left_buttons:hover {
+    background-color: rgb(0, 0, 0, .05);
+    border-color: #982;
+    border-width: 2px;
+}
+
+.profile_img {
+    width: 50%;
+    border-radius: 100%;
+    margin: 30px 0;
+}
+
+.dep_take_group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 3px 3px;
+}
+
+.dep_take_button {
+    display: inline-block;
+    width: 45%;
+    border: 1px solid black;
+    margin: 3% 3% 20% 3%;
+    padding: 5% 0;
+    font-size: 0.85rem;
+    border-radius: 13px;
+    background-color: rgb(246, 246, 244);
+}
+
+.deposit_button {
+    background-color: rgb(253, 218, 43);
+    border: 1px solid rgb(255, 225, 80);
+}
+
+.deposit_button:hover {
+    background-color: rgb(255, 225, 80);
+}
+
+.take_button {
+    border: 1px solid rgb(223, 223, 221);
+}
+
+.take_button:hover {
+    background-color: #f0f0f0;
+}
+
+.bottom_buttons_container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.left_bottom_button_column {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    width: 47%;
+    margin: 0px 2px;
+}
+
+.left_column_bottom_buttons {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    margin-top: 10px;
+    width: 100%;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    color: rgb(216, 216, 214); 
+}
+
+.left_column_bottom_buttons:hover {
+    color: rgb(55, 56, 52);
+    background-color: white;
+}
+
+.left_column_bottom_buttons>img {
+    height: 30px;
+}
+
+.left_column_bottom_buttons>p {
+    font-size: 0.8rem;
+    margin: 0;
+    padding: 10px 0 0 0;
+}
+
+
+
+/* MID COLUMN CONTENT */
+
+.mid_column_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    min-height: 125px;
+}
+
+.mid_col_top_row_number {
+    font-weight: 800;
+    font-size: 1.1rem;
+}
+
+.mid_col_top_row_percent {
+    position: absolute;
+    bottom: 15px;
+    left: 10px;
+    font-weight: 600;
+    color: rgb(108, 188, 165);
+}
+
+img.mid_top_dots {
+    position: absolute;
+    top: 12px;
+    right: 7px;
+    height: 26px;
+    padding: 3px;
+}
+
+img.mid_top_dots:hover {
+    border-radius: 7px;
+    background-color: #F8f8f8;
+}
+
+img.mid_top_graph {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    height: 25px;
+}
+
+.mid_col_top_row_players {
+    font-weight: 400;
+    font-size: 0.9rem;
+    margin-top: 3px;
+    color: rgb(194, 196, 188);
+}
+
+.full_card_top {
+    width: 100%;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.large_graph {
+    width: 95%;
+    border-radius: 15px;
+    margin: 30px 0 15px 0;
+}
+
+.bet_buddy_title {
+    font-weight: 200;
+    color: rgb(200, 200, 200);
+}
+
+.bet_buddy_today {
+    color: rgb(200, 200, 200);
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.full_card_nav {
+    padding-top: 12px;
+}
+
+.full_card_nav a {
+    color: rgb(200, 200, 200);
+    text-decoration: none;  
+    padding: 0px 7px;
+    margin: 0;
+    font-size: .9rem;
+}
+
+.full_card_nav a:visited {
+    color: rgb(200, 200, 200);
+}
+
+.full_card_nav a.active {
+    color: rgb(55, 56, 52);
+}
+
+.full_card_nav a:hover {
+    color: rgb(55, 56, 52);
+}
+
+
+
+
+/* RIGHT COLUMN */
+
+.full_width_small_card_graph {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 15px;
+}
