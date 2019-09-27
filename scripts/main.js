@@ -1,10 +1,6 @@
 function drawGraph() {
 
-    // const svgExists = document.getElementById('svgWrapper');
-    // if (svgExists) {
-    //     svgExists.parentNode.removeChild(svgExists);
-    // }
-
+    // Our dummy data for this graph
     const cleanData = [
         [1, 1],
         [2, 2],
@@ -37,11 +33,6 @@ function drawGraph() {
         [29, 13],
         [30, 15]
     ]
-
-    // const cleanData = savingsArray.map(function(d) {
-    //     return [d.year, Math.max(d.savings / 1000, 0)]
-    // });
-    console.log(cleanData)
     
     const w = 1000;
     const h = 500;
@@ -51,10 +42,6 @@ function drawGraph() {
     
     const svg = d3.select('#svgWrapper')
         .append('svg')
-        // .attr('width', "100%")
-        // .attr('height', "100%")
-        // .attr('width', w + "px")
-        // .attr('height', h + "px")
         .attr('preserveAspectRatio', 'xMidYMid meet')
         .attr('viewBox', "0 0 " + w + " " + h)
         .classed('svgContent', true)
@@ -77,21 +64,6 @@ function drawGraph() {
         .scale(yScale)
         // .tickFormat(d3.format("$,.0f"))
         .ticks(5);
-    
-    // svg.append('text')  // Title
-    //     .attr('x', w / 2)
-    //     .attr('y', padding / 2)
-    //     .attr('text-anchor', 'middle')
-    //     .attr('class', 'chartTitle')
-    //     .text(input.name + "'s Retirement Estimate");
-    
-    // svg.append('text') // Y Axis Label
-    //   .attr('x', -padding)
-    //   .attr('y', padding + 30)
-    //   .attr('text-anchor', 'end')
-    //   .attr('class', 'axisTitle')
-    //   .text('Savings ($1,000\'s)')
-    //   .attr('transform', 'rotate(-90)'); // Changes the way the x and y positioning work
     
     svg.append('g') // Bottom Axis
         .attr('transform', 'translate(0, ' + (h - axisPadding) + ')')  
