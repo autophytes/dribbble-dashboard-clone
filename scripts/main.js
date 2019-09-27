@@ -1,3 +1,13 @@
+const expandSidebarButton = document.querySelector('#expand_sidebar_button');
+const sidebar = document.querySelector('sidebar');
+
+expandSidebarButton.addEventListener('click', (e) => {
+    e.preventDefault();
+    console.log(e);
+
+    sidebar.classList.toggle('expanded');
+})
+
 function drawGraph() {
 
     // Our dummy data for this graph

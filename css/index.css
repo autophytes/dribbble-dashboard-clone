@@ -35,6 +35,14 @@ sidebar {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    /* transition: ease 1s all; */
+}
+
+sidebar.expanded {
+    width: 300px;
+    z-index: 30;
+    align-items: flex-start;
+    padding-left: 18px;
 }
 
 .sidebar_icons {
@@ -50,6 +58,10 @@ sidebar {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
+    color: #999;
+    font-size: 1.2rem;
+
 }
 
 .sidebar_link:hover{
@@ -181,10 +193,13 @@ header {
     padding: 5px 8px 5px 5px;
     border-radius: 10px;
     color: rgb(231, 196, 28);
+    border: 2px solid rgb(253, 218, 43);
 }
 
 .header_profile:hover {
-    background-color: rgba(0, 0, 0, .05);
+    box-sizing: border-box;
+    border: 2px solid rgb(210, 180, 29);
+    /* background-color: rgba(0, 0, 0, .05); */
     color: rgb(210, 180, 25);
     /* border: 1px solid rgb(210, 180, 29); */
 }
@@ -196,6 +211,7 @@ header {
 
 .header_profile_carat {
     padding-right: 5px;
+    font-size: 0.8rem;
 }
 
 
@@ -245,7 +261,7 @@ header {
 .small_card:hover {
     transform: scale3d(1.1, 1.1, 1.1);
     z-index: 2;
-    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, 0.15);
 }
 
 .full_card {
@@ -381,6 +397,28 @@ header {
     font-size: 0.8rem;
     margin: 0;
     padding: 10px 0 0 0;
+}
+
+.left_column_footer {
+    border-top: 1px solid rgb(219, 220, 215);
+    margin: 50px 20px 0 20px;
+    padding: 15px 10px;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 0.6rem;
+    color: rgb(219, 220, 215); */
+}
+
+.footer_wrapper_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-size: 0.6rem;
+    color: rgb(219, 220, 215);
+    padding: 2px 0;
 }
 
 
