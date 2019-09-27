@@ -131,7 +131,7 @@
                     <img class="profile_img" src="images/cat_full.jpeg">   <!-- Profile Photo -->
                     <h3>ENGLAND</h3>
                     <h1>Slava Kornilov</h1>
-                    <h2><sup>$</sup>25 000</h2>
+                    <h2><sup>$</sup>25,000</h2>
 
                     <div class="dep_take_group">   <!-- Deposit / Take Buttons -->
                         <div class="dep_take_button deposit_button">Deposit</div>
@@ -214,7 +214,7 @@
 
                             <img class="mid_top_dots" src="icons/menu dots.svg">  <!-- Kebab Button -->
                             
-                            <p class="mid_col_top_row_percent">&darr; -0.2%</p> <!-- The up arrow may need to be styled separately -->
+                            <p class="mid_col_top_row_percent down">&darr; -0.2%</p> <!-- The up arrow may need to be styled separately -->
                             
                             <img class="mid_top_graph" src="images/mini-graph-2.png">   <!-- Some Graph Drawing Functionality -->
 
@@ -256,11 +256,15 @@
                         
                         </div>
 
-                            <img class="large_graph" src="images/large_graph.png">
-                            <!-- External Graph Functionality -->
+                        <!-- TEMP: DELETE AND UNCOMMENT THE PHOTO BELOW TO RESTORE THE LARGE PHOTO -->
+                        <div class="svgWrapper" id="svgWrapper"></div>
+
+                        <!-- <img class="large_graph" src="images/large_graph.png"> -->
+                        <!-- External Graph Functionality -->
+                        
                     </div>
 
-                    <div class="mid_column_row">   <!-- Bottom Row of Cards -->
+                    <div class="mid_column_row varying">   <!-- Bottom Row of Cards -->
 
                         <div class="small_card">   <!-- First Card -->
                             
@@ -278,38 +282,64 @@
                         <div class="small_card">   <!-- Second Card -->
                             
                             <div>
-                                <p>03:20</p>
-                                <p>Tomorrow</p>
+                                <p class="mid_col_top_row_number">4:15pm</p>
+                                <p class="mid_col_top_row_players">Tomorrow</p>
                             </div>
-
-                            <div>   <!-- Overlapping (Offset) Team Logos -->
-                                <img>
-                                <img>
+    
+                            <div class="mini_circle_logo_wrapper">   <!-- Overlapping (Offset) Team Logos -->
+                                <div class="mini_circle_logo left">
+                                    <img style="width: 23px" src="images/clemson_logo.png">
+                                </div>
+                                <div class="mini_circle_logo">
+                                    <img style="width: 18px" src="images/gamecocks_logo.png">
+                                </div>
                             </div>
                             
-                            <img> <!-- Sportsball Photo -->                        
+                            <img class="full_width_sports_image" src="images/clemson_image.jpg"> <!-- Sportsball Photo -->    
+                            
+                            <!-- <h3 class="top_game">TOP GAME</h3> -->
 
+                            <div class="team_matchup">
+                                <h1 class="team_matchup_line losing">Clemson</h1>
+                                <h1 class="team_matchup_line losing">0</h1>
+                                <!-- Unsure how the carat is drawn beside this line -->
+                            </div>
+                            <div class="team_matchup">
+                                <h1 class="team_matchup_line losing">South Carolina</h1>
+                                <h1 class="team_matchup_line losing">0</h1>
+                            </div>
+                            
                         </div>
 
                         <div class="small_card">   <!-- Third Card -->
                             
                             <div>
-                                <p>11:04</p>
-                                <p>1 time</p>
+                                <p class="mid_col_top_row_number">9:00pm</p>
+                                <p class="mid_col_top_row_players">Tomorrow</p>
                             </div>
-
-                            <div>   <!-- Overlapping (Offset) Team Logos -->
-                                <img>
-                                <img>
+    
+                            <div class="mini_circle_logo_wrapper">   <!-- Overlapping (Offset) Team Logos -->
+                                <div class="mini_circle_logo left">
+                                    <img style="width: 23px" src="images/alabama_logo.png">
+                                </div>
+                                <div class="mini_circle_logo">
+                                    <img style="width: 23px" src="images/lsu_logo.png">
+                                </div>
                             </div>
                             
-                            <div>   <!-- Overlapping Friend Images -->
-                                <img>
-                                <img>
-                            </div>
-
-                            <p>09' 14'</p>
+                            <img class="full_width_sports_image" src="images/alabama_image.jpg"> <!-- Sportsball Photo -->    
                             
+                            <h3 class="top_game">TOP GAME</h3>
+
+                            <div class="team_matchup">
+                                <h1 class="team_matchup_line losing">Alabama</h1>
+                                <h1 class="team_matchup_line losing">0</h1>
+                                <!-- Unsure how the carat is drawn beside this line -->
+                            </div>
+                            <div class="team_matchup">
+                                <h1 class="team_matchup_line losing">LSU</h1>
+                                <h1 class="team_matchup_line losing">0</h1>
+                            </div>
                         </div>
 
                     </div>
@@ -334,41 +364,87 @@
                     <div class="small_card">   <!-- Middle Card -->
                             
                         <div>
-                            <p>03:20</p>
-                            <p>19.03</p>
+                            <p class="mid_col_top_row_number">3:20pm</p>
+                            <p class="mid_col_top_row_players">March 19th</p>
                         </div>
 
-                        <div>   <!-- Overlapping (Offset) Team Logos -->
-                            <img>
-                            <img>
+                        <div class="mini_circle_logo_wrapper">   <!-- Overlapping (Offset) Team Logos -->
+                            <div class="mini_circle_logo left">
+                                <img style="width: 23px" src="images/manchester.png">
+                            </div>
+                            <div class="mini_circle_logo">
+                                <img style="width: 18px" src="images/real_madrid_logo.png">
+                            </div>
                         </div>
                         
-                        <img> <!-- Sportsball Photo -->    
+                        <img class="full_width_sports_image" src="images/real_madrid.jpg"> <!-- Sportsball Photo -->    
                         
-                        <p>TOP GAME</p>
-                        <div>
-                            <p>Real Madrid</p>
-                            <p>3</p>
+                        <h3 class="top_game">TOP GAME</h3>
+                        <div class="team_matchup">
+                            <h1 class="team_matchup_line">Real Madrid</h1>
+                            <h1 class="team_matchup_line">3</h1>
                             <!-- Unsure how the carat is drawn beside this line -->
                         </div>
-                        <div>
-                            <p>Manchester</p>
-                            <p>1</p>
+                        <div class="team_matchup">
+                            <h1 class="team_matchup_line losing">Manchester</h1>
+                            <h1 class="team_matchup_line losing">1</h1>
                         </div>
 
-                        <span>
-                            2.01
-                        </span>
-                        <span>
-                            ^ 1.03  <!-- Use icon font set for up/down carat? -->
-                        </span>
-                        <span>
-                            5.50 v  <!-- Use icon font set for up/down carat? -->
-                        </span>
+                        <div class="team_matchup_up_or_down_row">
+                            <span class="team_matchup_up_or_down even">
+                                2.01
+                            </span>
+                            <span class="team_matchup_up_or_down up">
+                                &uarr; 1.03<!-- Use icon font set for up/down carat? -->
+                            </span>
+                            <span class="team_matchup_up_or_down down">
+                                5.50 &darr;<!-- Use icon font set for up/down carat? -->
+                            </span>
+                        </div>
+
 
                     </div>
 
-                    <div class="small_card">   <!-- Bottom Card (off screen) -->
+                    <div class="small_card">   <!-- Bottom Card, off screen -->
+                            
+                        <div>
+                            <p class="mid_col_top_row_number">1:15pm</p>
+                            <p class="mid_col_top_row_players">March 18th</p>
+                        </div>
+
+                        <div class="mini_circle_logo_wrapper">   <!-- Overlapping (Offset) Team Logos -->
+                            <div class="mini_circle_logo left">
+                                <img style="width: 23px" src="images/braves_logo.gif">
+                            </div>
+                            <div class="mini_circle_logo">
+                                <img style="width: 23px" src="images/cardinals_logo.png">
+                            </div>
+                        </div>
+                        
+                        <img class="full_width_sports_image" src="images/braves_image.webp"> <!-- Sportsball Photo -->    
+                        
+                        <div class="team_matchup">
+                            <h1 class="team_matchup_line losing">St. Louis</h1>
+                            <h1 class="team_matchup_line losing">2</h1>
+                            <!-- Unsure how the carat is drawn beside this line -->
+                        </div>
+                        <div class="team_matchup">
+                            <h1 class="team_matchup_line">Atlanta</h1>
+                            <h1 class="team_matchup_line">5</h1>
+                        </div>
+
+                        <div class="team_matchup_up_or_down_row">
+                            <span class="team_matchup_up_or_down up">
+                                &uarr; 2.91
+                            </span>
+                            <span class="team_matchup_up_or_down down">
+                                1.81 &darr;<!-- Use icon font set for up/down carat? -->
+                            </span>
+                            <span class="team_matchup_up_or_down up">
+                                &uarr; 4.17<!-- Use icon font set for up/down carat? -->
+                            </span>
+                        </div>
+
                     </div>
 
                 </section>            
@@ -376,4 +452,7 @@
         </main>
 
     </body>
+
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="scripts/main.js"></script>
 </html>

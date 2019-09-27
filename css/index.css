@@ -19,6 +19,8 @@ html {
     border-radius: 0 0 35% 35%;
 }
 
+/* SIDEBAR */
+
 sidebar {
     position: fixed;
     z-index: 20;
@@ -221,6 +223,9 @@ header {
     align-items: center;
 }
 
+
+/* PARENT CARD ELEMENTS */
+
 .small_card {
     display: inline-block;
     position: relative; /* so we can absolute position interior elements */
@@ -233,6 +238,7 @@ header {
 }
 
 .full_card {
+    /* height: 500px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -377,6 +383,10 @@ header {
     min-height: 125px;
 }
 
+.mid_column_row.varying {
+    align-items: flex-start;
+}
+
 .mid_col_top_row_number {
     font-weight: 800;
     font-size: 1.1rem;
@@ -388,6 +398,10 @@ header {
     left: 10px;
     font-weight: 600;
     color: rgb(108, 188, 165);
+}
+
+.mid_col_top_row_percent.down {
+    color: rgb(212, 89, 80);
 }
 
 img.mid_top_dots {
@@ -445,6 +459,7 @@ img.mid_top_graph {
 
 .full_card_nav {
     padding-top: 12px;
+    font-weight: 500;
 }
 
 .full_card_nav a {
@@ -476,4 +491,143 @@ img.mid_top_graph {
     width: 100%;
     margin: 0 auto;
     padding-top: 15px;
+}
+
+.full_width_sports_image {
+    width: 100%;
+    margin: 0;
+    margin-top: 20px;
+    padding: 0px 5px 5px 5px;
+    border-radius: 25px;
+}
+
+.mini_circle_logo_wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 15px 15px;
+}
+
+.mini_circle_logo {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 500px;
+    border: 1px solid darkgray;
+    background-color: white;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: static;
+}
+
+.mini_circle_logo.left {
+    transform: translate(10px, 0);
+}
+
+.top_game {
+    color: rgb(253, 218, 43);
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+}
+
+.team_matchup {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3px 0;
+}
+
+.team_matchup_line {
+    display: inline;
+    font-size: 1.5rem;
+    padding: 0;
+    margin: 0;
+}
+
+.team_matchup_line.losing {
+    font-weight: 300;
+    color: rgb(200, 200, 200);
+}
+
+.team_matchup_up_or_down_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.team_matchup_up_or_down {
+    width: 32%;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 7px 0;
+}
+
+.team_matchup_up_or_down.even {
+    border-color: rgb(243, 243, 243);
+    color: #666;
+}
+
+.team_matchup_up_or_down.up {
+    border-color: rgb(108, 188, 165);;
+    color: rgb(108, 188, 165);
+}
+
+.team_matchup_up_or_down.down {
+    border-color:rgb(212, 89, 80);
+    color: rgb(212, 89, 80);
+}
+
+
+
+
+/* CHART ELEMENTS */
+
+.graphBar {
+    fill: #03a9f4;
+}
+
+.bottomAxis, .leftAxis {
+    font-size: 2rem;
+    font-weight: 200;
+    color: #aaa;
+}
+
+.chartTitle {
+    font-size: 32px;
+    font-weight: 200;
+}
+
+.axisTitle {
+    font-size: 24px;
+    font-weight: 200;
+}
+
+.svgWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 95%;
+    height: 315px;
+    /* padding-bottom: 50%; */
+    margin-top: 30px;
+    margin-left: 10px;
+    vertical-align: top;
+    overflow: hidden;
+}
+
+.svgContent {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
